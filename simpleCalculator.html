@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> CALCULATOR</title>
+<script>
+   function addition(){
+        var a,b,res;
+        a=document.calculator.tf1.value;
+        b=document.calculator.tf2.value;
+        res=parseInt(a)+parseInt(b);
+        document.calculator.tf3.value=res;
+   }
+   function subtraction(){
+        var a,b,res;
+        a=document.calculator.tf1.value;
+        b=document.calculator.tf2.value;
+        res=parseInt(a)-parseInt(b);
+        document.calculator.tf3.value=res;
+   }
+   function multiplication(){
+        var a,b,res;
+        a=document.calculator.tf1.value;
+        b=document.calculator.tf2.value;
+        res=parseInt(a)*parseInt(b);
+        document.calculator.tf3.value=res;
+   }
+   function division(){
+        var a,b,res;
+        a=document.calculator.tf1.value;
+        b=document.calculator.tf2.value;
+        res=parseInt(a)/parseInt(b);
+        document.calculator.tf3.value=res;
+   }
+</script>
+</head>
+<body>
+    <h1><center>Simple Calculator</center></h1>
+<form name="calculator"><center>
+    <table border="0">
+        <tr>
+        <td><label>First number:</label></td>
+        <td><input type="text" size="20" name="tf1" ></td>
+        </tr>
+        <tr>
+        <td><label>Second number:</label></td>
+        <td><input type="text" size="20" name="tf2"></td>
+        </tr>
+        <tr>
+        <td><label>Result:</label></td>
+        <td><input type="text" size="20" name="tf3"></td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="4"><center><input type="button" value="ADD" onclick="addition()">
+                    <input type="button" value="SUB" onclick="subtraction()">
+                    <input type="button" value="MUL" onclick="multiplication()">
+                    <input type="button" value="DIV" onclick="division()"><br><br>
+                    <input type="reset" value="CLEAR"></center>
+                </td>
+            </tr>
+        </tfoot>
+
+</form>
+</center>
+</table>
+</body>
+</html>
